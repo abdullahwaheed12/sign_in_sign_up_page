@@ -42,7 +42,7 @@ class _LoginState extends State<Login> {
             top: size.height * 0.22,
             child: Container(
               width: size.width,
-              height: size.height * 0.8,
+              height: size.height * 0.9,
               padding: EdgeInsets.all(20),
               child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -140,6 +140,20 @@ class _LoginState extends State<Login> {
                       ),
                       onPressed: () {},
                     ),
+                    Expanded(
+                        child: Align(
+                      alignment: Alignment.bottomCenter,
+                      child: Text.rich(TextSpan(children: [
+                        TextSpan(text: "Don't have an account?"),
+                        TextSpan(
+                            text: ' Sign Up',
+                            style: TextStyle(
+                                color: Color(0xfffdb046), fontSize: 20)),
+                      ])),
+                    )),
+                    SizedBox(
+                      height: 20,
+                    )
                   ]),
             ),
           ),

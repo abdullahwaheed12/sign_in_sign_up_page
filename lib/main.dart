@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+// import 'package:sign_in_sign_up_page/screen/signUp.dart';
 
-import 'screen7/login.dart';
-import 'screen6/signUp.dart';
-
+import 'screen8/login.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,9 +18,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: Hello(),
       home: Login(),
-      // home: SignUp(),
+      // home: Signup(),
     );
   }
 }
-
-
