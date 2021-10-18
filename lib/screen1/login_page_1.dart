@@ -44,7 +44,7 @@ class _LoginState extends State<Login> {
                   children: [
                     CircleAvatar(
                       radius: 35,
-                      backgroundImage: AssetImage('assets/images/image.jpg'),
+                      backgroundImage: AssetImage('assets/clock.png'),
                     ),
                     SizedBox(
                       height: 15,
@@ -111,12 +111,11 @@ class _LoginState extends State<Login> {
                             flex: 2,
                             child: Text(
                               'ForgotPassword',
-                              style:
-                                  TextStyle(decoration: TextDecoration.underline),
+                              style: TextStyle(
+                                  decoration: TextDecoration.underline),
                             ))
                       ],
                     ),
-                    
                     SizedBox(
                       height: 20,
                     ),

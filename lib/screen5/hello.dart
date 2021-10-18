@@ -13,19 +13,21 @@ class _HelloState extends State<Hello> {
   late Size size;
   @override
   void didChangeDependencies() {
-    size =Size(MediaQuery.of(context).size.width, MediaQuery.of(context).size.height-86) ;
+    size = Size(MediaQuery.of(context).size.width,
+        MediaQuery.of(context).size.height - 86);
     super.didChangeDependencies();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title:Text('Welcome Screen')),
+      appBar: AppBar(title: Text('Welcome Screen')),
       body: Container(
         decoration: boxDecoration(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            //10%
             SizedBox(
               width: double.infinity,
               height: size.height * 0.1,
@@ -34,29 +36,36 @@ class _HelloState extends State<Hello> {
               'Hello There!',
               style: TextStyle(color: Colors.white, fontSize: 35),
             ),
+            //5%
             SizedBox(
               width: double.infinity,
               height: size.height * 0.05,
             ),
             qutesText(),
+            //1%
             SizedBox(
               width: double.infinity,
               height: size.height * 0.1,
             ),
+            //25%
             Image.asset(
               'assets/officeMen.png',
-              height: size.height * 0.3,
-              width: size.width*0.8,
+              height: size.height * 0.25,
+              width: size.width * 0.8,
               fit: BoxFit.fill,
             ),
+            //10%
             SizedBox(
               width: double.infinity,
               height: size.height * 0.1,
             ),
+            //8%
             customButton('Login', Colors.blue),
+            //2%
             SizedBox(
               height: size.height * 0.02,
             ),
+            //8%
             customButton('Sign Up', Colors.red),
           ],
         ),
@@ -123,5 +132,4 @@ class _HelloState extends State<Hello> {
       ),
     );
   }
-
 }

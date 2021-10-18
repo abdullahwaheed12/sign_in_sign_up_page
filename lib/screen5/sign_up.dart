@@ -96,20 +96,22 @@ class _SignUpState extends State<SignUp> {
             alignment: Alignment.centerLeft,
             child: Text(
               '$text:',
-              style: TextStyle(fontSize: 20, color: Colors.white),
+              style: TextStyle(fontSize: 18, color: Colors.white),
             ),
           ),
           SizedBox(
             height: size.height * 0.01,
           ),
-          TextField(
-            cursorColor: Colors.white,
-            cursorHeight: 30,
-            decoration: InputDecoration(
-              focusedBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.grey)),
-              enabledBorder: OutlineInputBorder(
-                  borderSide: BorderSide(color: Colors.white)),
+          SizedBox(
+            height: size.height * 0.08,
+            child: TextField(
+              cursorColor: Colors.white,
+              decoration: InputDecoration(
+                focusedBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.grey)),
+                enabledBorder: OutlineInputBorder(
+                    borderSide: BorderSide(color: Colors.white)),
+              ),
             ),
           ),
         ],
